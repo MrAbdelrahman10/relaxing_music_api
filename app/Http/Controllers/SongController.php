@@ -59,4 +59,17 @@ class SongController extends Controller
 		});
 		return response_json(new SongResource($data));
 	}
+	
+	/**
+	 * Return songs by ids
+	 *
+	 * @param  mixed $ids
+	 * @return void
+	 */
+	public function show_list($ids)
+	{
+		$ids = explode(',', $ids);
+		$data = Song::with(['category'])->whereIn("id", $ids)->get();
+		return response_json(SongResource::collection($data));
+	}
 }
