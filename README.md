@@ -6,10 +6,15 @@ Relaxing Music Api for serving [Relaxing Music Mobile Application](https://githu
 
 # Steps to install  
 
+## Installing vie cli
 1. Rename **.env.example** to **.env** and update values
 2. Install packages via terminal **composer install**
-3. To Install via docker run: **docker-compose up -d**
-4. Run **php artisan migrate --seed** to generate database table with sample data
+3. Run **php artisan migrate --seed** to generate database table with sample data
+
+## Installing vie docker
+1. To Install via docker run: **docker-compose up -d**
+2. Run **docker-compose exec app composer install** if composer files not installed
+2. Run **docker-compose exec app php artisan migrate --seed** to generate database table with sample data
 
 
 # Run via CLI
