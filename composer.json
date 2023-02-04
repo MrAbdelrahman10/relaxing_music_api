@@ -5,9 +5,9 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": "^7.2.5",
+        "php": "^8.0.0",
         "illuminate/redis": "^7.1",
-        "laravel/lumen-framework": "^7.0"
+        "laravel/lumen-framework": "^9.0"
     },
     "require-dev": {
         "fzaninotto/faker": "^1.9.1",
